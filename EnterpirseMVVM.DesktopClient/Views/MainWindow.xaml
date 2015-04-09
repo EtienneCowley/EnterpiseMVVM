@@ -9,6 +9,6 @@
         Title="MainWindow" Height="350" Width="525">
     
     <Grid>
-        <TextBox Text="{Binding CustomerName}"></TextBox>
+        <TextBox Margin="30" Text="{Binding CustomerName, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged}"></TextBox>
     </Grid>
 </Window>
